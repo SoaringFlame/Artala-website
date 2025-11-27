@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Основные метаданные и ссылки на внешние ресурсы -->
+    <meta charset="UTF-8"><!-- Установка кодировки -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Масштабирование под устройства -->
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="style.css"><!-- Основной стиль -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Иконки FontAwesome -->
+    <title>Коллекция поделок</title><!-- Заголовок в браузере -->
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <nav class="navbar" id="main">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="navbar__container">
+            <a href="index.html"><img class="logo" src="logo/logotransparent.png" alt="логотип"></a>
+            <h1 class="title-first">
+                <span class="title-first__main">Artala</span>
+            </h1>
+            <div class="navbar-container">
+                <ul class="navbar__menu-items">
+                    <li class="navbar__menu-items_item"><a href="index.html">Главная</a></li>
+                    <li class="navbar__menu-items_item"><a href="contact.html">Контакты</a></li>
+                    <li class="navbar__menu-items_item">
+                        <a href="collection.html">Коллекция</a>
+                        <div class="dropdown">
+                            <a href="vangog.html">Звездная ночь</a>
+                            <a href="home.html">Румбокс</a>
+                            <a href="rik_and_morty.html">Рик и Морти</a>
+                            <a href="Raiden.html">Райдэн</a>
+                            <a href="glass_paints.html">Витражи</a>
+                            <a href="lilac_bush.html">Вышивка крестиком</a>
+                        </div>
+                    </li>
+                    <li class="navbar__menu-items_item"><a href="about.html">О нас</a></li>
+                    <div class="user-status" id="user-status">
+                        <a href="authorization.html" class="user-avatar-link">
+                            <img src="img/profile.png" alt="аватарка пользователя" class="profile-logo">
+                        </a>
+                    </div>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Секция с коллекцией товаров -->
+    <section class="colection" id="collection">
+        <h2 class="title-two">Наша уникальная коллекция</h2> <!-- Заголовок секции -->
+        <div class="colection-container">
+
+
+            <!-- Элемент коллекции (пример с картиной Ван Гога) -->
+            <div class="candle-item" id="vangog">
+                <div class="container-img">
+                    <img class="container-img-1" src="img/vangog.jpg" alt="">
+                </div>
+                <div class="container">
+                    <div class="item">
+                        <h3 class="candle-item_1">Картина Ван Гога "Звездная ночь" </h3>
+                        <span class="candle-item_2">Алмазная мозаика</span><br>
+                        <span class="candle-item_3">Подставки под чашки</span><br>
+                        <p class="candle-item_4">Цена: 799 р.</p>
+                        <a href="vangog.html"><button class="btn-cards_green">Описание</button></a>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Еще один элемент коллекции с видео -->
+            <div class="candle-item" id="home_1">
+                <div class="container-img">
+                    <video class="container-img-1" controls>
+                        <source src="home.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео тег.
+                    </video>
+                </div>
+                <div class="container">
+                    <div class="item">
+                        <h3 class="candle-item_1">Румбокс/Интерьерный конструктор</h3>
+                        <span class="candle-item_2">Куколный интерьер в миниатюре</span><br>
+                        <span class="candle-item_3">Придают особую атмосферу волшебства</span><br>
+                        <p class="candle-item_4 item-details">Цена: 2990 р.</p>
+                        <a href="home.html"><button class="btn-cards_green">Описание</button></a>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Другие элементы коллекции -->
+            <div class="candle-item" id="lilac bush">
+                <div class="container-img">
+                    <img class="container-img-1" src="img/lilac bush.jpg" alt="">
+                </div>
+                <div class="container">
+                    <div class="item">
+                        <h3 class="candle-item_1">Вышивка крестиком</h3>
+                        <span class="candle-item_2">Вышивка крестиком "букет сирени"</span><br>
+                        <span class="candle-item_3">Ткань блочного переплетения</span><br>
+                        <p class="candle-item_4">Цена: 1400 р.</p>
+                        <a href="lilac_bush.html"><button class="btn-cards_green">Описание</button></a>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="candle-item" id="Raiden">
+                <div class="container-img">
+                    <img class="container-img-1" src="img/Raiden.jpg" alt="">
+                </div>
+                <div class="container">
+                    <div class="item">
+                        <h3 class="candle-item_1">Райдэн</h3>
+                        <span class="candle-item_2">Алмазная мозаика "Райдэн"</span><br>
+                        <span class="candle-item_3">На подрамнике Геншин импакт 30х30</span><br>
+                        <p class="candle-item_4">Цена: 3650 р.</p>
+                        <a href="Raiden.html"><button class="btn-cards_green">Описание</button></a>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </div>
+            <div class="candle-item" id="glass_paints">
+                <div class="container-img">
+                    <img class="container-img-1" src="img/glass_paints.jpg" alt="">
+                </div>
+                <div class="container">
+                    <div class="item">
+                        <h3 class="candle-item_1">Витражи</h3>
+                        <span class="candle-item_2">Экологичные безопасные компоненты.</span><br>
+                        <span class="candle-item_3">Различные варианты исполения</span><br>
+                        <p class="candle-item_4">Цена: 100 р.</p>
+                        <a href="glass_paints.html"><button class="btn-cards_green">Описание</button></a>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="candle-item" id="rik_and_morty">
+                <div class="container-img">
+                    <img class="container-img-1" src="img/rik_and_morty.jpg" alt="">
+                </div>
+                <div class="container">
+                    <div class="item">
+                        <h3 class="candle-item_1">Рик и Морти</h3>
+                        <span class="candle-item_2">Алмазная мозаика "Рик и Морти"</span><br>
+                        <span class="candle-item_3">На подрамнике 40х50</span><br>
+                        <p class="candle-item_4">Цена: 3990 р.</p>
+                        <a href="rik_and_morty.html"><button class="btn-cards_green">Описание</button></a>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </section>
+
+    <!-- корзина -->
+    <div class="cart-icon">
+        <img src="img/cart-icon.png" alt="Cart" class="cart-icons">
+    </div>
+
+    <!-- Контейнер корзины -->
+    <div class="cart-items">
+        <div class="close-btn">&times;</div> <!-- Кнопка закрытия корзины -->
+        <h3>Ваша корзина:</h3>
+        <div class="cart-content"></div>  <!-- Содержимое корзины -->
+        <div class="cart-total"></div>  <!-- Общая стоимость -->
+        <div class="cart-buttons">
+            <a href="#contact"><button class="checkout-btn" id="checkoutBtn">Оформить</button></a>
+            <button class="clear-cart-btn">Очистить корзину</button>
+        </div>
+    </div>
+
+    <!-- Форма для заказа -->
+    <!-- Контент страницы -->
+    <section class="section-book" id="contact">
+        <div class="book__form">
+            <form action="sendmail.php" method="POST" class="form">
+                <div class="text-align-center">
+                    <h4 class="title-secondary">
+                        Для заказа товара свяжитесь с нами заполнив форму
+                    </h4>
+                </div>
+                <!-- Поля формы -->
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="Имя Фамилия *" id="name" maxlength="20" name="name" required>
+                </div>
+                <div class="form__group">
+                    <input type="email" class="form__input" placeholder="Ваш email *" id="email" maxlength="20" name="email" required>
+                </div>
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="Номер телефона *" id="phone" maxlength="19" name="phone" required>
+                </div>
+                <div class="form__group">
+                    <textarea class="form__input_text" placeholder="Текст" id="text" name="text" required></textarea>
+                </div>
+
+                <!-- Политика конфиденциальности -->
+                <div class="form__group">
+                    <input type="checkbox" class="form__check" id="privacy-check" required>
+                    <label for="privacy-check" class="form__label">Я соглашаюсь с <a href="privacy.html" target="_blank">политикой в отношении персональных данных</a></label>
+                </div>
+                <!-- Кнопка для отправки формы -->
+                <div class="form__group">
+                    <button class="btn-form btn-cards_green" type="submit">Отправить</button>
+                </div>
+
+
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Футер сайта -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="box-icon">
+                <div class="box-icon">
+                    <div class="icons-item">
+                        <a href="https://api.whatsapp.com/send/?phone=79999999999">
+                            <div class="circle">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="icons-item">
+                        <a href="tel:+79999999999">
+                            <div class="circle">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="icons-item">
+                        <a href="https://vk.com/soaringflame">
+                            <div class="circle">
+                                <i class="fab fa-vk"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Информация о разработчике -->
+            <p class="developer">
+                © 2024 Artala. Сайт разработан Юрочкиной Станиславой Владиславовной для учебных целей.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Скрипты для функциональности сайта -->
+    <script src="js/cart.js"></script>
+    <script src="js/active.js"></script>
+    <script src="js/number.js"></script>
+    <script src="js/basket.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

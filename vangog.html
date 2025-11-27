@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Интернет-магазин поделок</title>
+</head>
+<body>
+    <section class="container__description">
+        <a href="index.html" class="privacy-back">&larr;Вернуться назад</a>
+        <div id="close-button">&times;</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="wrapper">
+                        <div class="slider">
+                            <div class="slides slide1" style="background-image: url('img/vangog.jpg');"></div>
+                            <div class="slides slide2" style="background-image: url('img/1.jpg');"></div>
+                            <div class="slides slide3" style="background-image: url('img/2.jpg');"></div>
+                            <div class="slides slide4" style="background-image: url('img/3.jpg');"></div>
+                            <div class="slides slide5" style="background-image: url('img/4.jpg');"></div>
+                        </div>
+                        <!-- Точки навигации -->
+                        <div class="slider-nav">
+                            <span class="nav-dot" onclick="setSlide(0)"></span>
+                            <span class="nav-dot" onclick="setSlide(1)"></span>
+                            <span class="nav-dot" onclick="setSlide(2)"></span>
+                            <span class="nav-dot" onclick="setSlide(3)"></span>
+                            <span class="nav-dot" onclick="setSlide(4)"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box-text">
+                        <div class="box-text-container">
+                            <h2>Картина Ван Гога "Звездная ночь"</h2>
+                            <p class="price">Цена: 799 р.</p>
+                            <p class="box_text__container_description">
+                                Алмазная мозаика<br>
+                                Подставки под чашки<br>
+                                Стразы<br>
+                                Лоток для страз<br>
+                                Стилус<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/slider.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

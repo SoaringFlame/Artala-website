@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Интернет-магазин поделок</title>
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <nav class="navbar" id="main">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="navbar__container">
+            <a href="index.html"><img class="logo" src="logo/logotransparent.png" alt="логотип"></a>
+            <h1 class="title-first">
+                <span class="title-first__main">Artala</span>
+            </h1>
+            <div class="navbar-container">
+                <ul class="navbar__menu-items">
+                    <li class="navbar__menu-items_item"><a href="index.html">Главная</a></li>
+                    <li class="navbar__menu-items_item"><a href="contact.html">Контакты</a></li>
+                    <li class="navbar__menu-items_item">
+                        <a href="collection.html">Коллекция</a>
+                        <div class="dropdown">
+                            <a href="vangog.html">Звездная ночь</a>
+                            <a href="home.html">Румбокс</a>
+                            <a href="rik_and_morty.html">Рик и Морти</a>
+                            <a href="Raiden.html">Райдэн</a>
+                            <a href="glass_paints.html">Витражи</a>
+                            <a href="lilac_bush.html">Вышивка крестиком</a>
+                        </div>
+                    </li>
+                    <li class="navbar__menu-items_item"><a href="about.html">О нас</a></li>
+                    <div class="user-status" id="user-status">
+                        <a href="authorization.html" class="user-avatar-link">
+                            <img src="img/profile.png" alt="аватарка пользователя" class="profile-logo">
+                        </a>
+                    </div>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Контент страницы -->
+    <button class="cart-btn" id="view-cart-btn" onclick="viewCart()">Посмотреть корзину</button>
+    <ul id="cart-items"></ul>
+
+    <section class="first-section" id="main-1">
+        <div class="header__box">
+            <img class="log1" src="logo/logotransparent.png" alt="логотип">
+            <h1 class="title-first">
+                <span class="title-love">СДЕЛАНО С ЛЮБОВЬЮ</span>
+                <span class="title-first__secondary">поделки ручной работы</span>
+            </h1>
+            <a href="collection.html"><button class="btn margin">Заказать</button></a>
+        </div>
+    </section>
+
+    <div class="blocks-container">
+        <div class="news-block about__title-secondary">
+            <h2>Новостной блок</h2>
+            <p><strong>Опубликовано:</strong> 31 октября 2024 года</p>
+            <p>На недавней выставке декоративно-прикладного искусства в Париже были представлены новые уникальные поделки, включая авторские работы в технике алмазной мозаики и изделия из дерева. Эти изделия отличаются оригинальным дизайном и высоким качеством исполнения.</p>
+            <p>В рамках мероприятия также были анонсированы новые мастер-классы, которые помогут любителям рукоделия освоить различные техники и создать свои уникальные поделки.</p>
+        </div>
+
+        <div class="main-block about__title-secondary">
+            <h2>Основной блок</h2>
+            <p>Каждая поделка — это уникальное произведение, созданное с любовью и вниманием к деталям. Наш магазин предлагает широкий ассортимент изделий ручной работы, которые станут отличным подарком или дополнением интерьера.</p>
+            <p>Выберите свой идеальный аксессуар или декор среди наших коллекций, и откройте для себя мир творчества и вдохновения. Наша цель – сделать ваш дом красивее и уютнее с помощью уникальных handmade-изделий!</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="box-icon">
+                <div class="icons-item">
+                    <a href="https://api.whatsapp.com/send/?phone=79999999999">
+                        <div class="circle">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="icons-item">
+                    <a href="tel:+79999999999">
+                        <div class="circle">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="icons-item">
+                    <a href="https://vk.com/soaringflame">
+                        <div class="circle">
+                            <i class="fab fa-vk"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <p class="developer">
+                © 2024 Artala. Сайт разработан Юрочкиной Станиславой Владиславовной для учебных целей.
+            </p>
+        </div>
+    </footer>
+    <script>
+
+        // Проверяем наличие параметров в URL
+
+        const params = new URLSearchParams(window.location.search);
+
+        if (params.has('success')) {
+
+            document.getElementById('successMessage').style.display = 'block'; // Показать сообщение о регистрации
+
+        }
+
+        if (params.has('authSuccess')) {
+
+            document.getElementById('authSuccessMessage').style.display = 'block'; // Показать сообщение об авторизации
+
+        }
+
+    </script>
+    </script>
+    <!-- Подключение JavaScript -->
+    <script src="js/active.js"></script>
+    <script src="js/number.js"></script>
+    <script src="js/basket.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

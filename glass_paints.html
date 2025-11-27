@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Установка основных метаданных и подключений стилей -->
+    <meta charset="UTF-8"> <!-- Кодировка для поддержки различных языков -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Адаптация сайта под различные устройства -->
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="style.css"> <!-- Локальный файл стилей -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> <!-- Bootstrap для адаптивного дизайна -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Иконки FontAwesome -->
+    <title>Интернет-магазин поделок</title> <!-- Название страницы в браузере -->
+</head>
+<body>
+    <!-- Секция описания продукта -->
+    <section class="container__description">
+        <a href="collection.html" class="privacy-back">&larr;Вернуться назад</a> <!-- Ссылка для возврата к коллекции -->
+        <div id="close-button">&times;</div> <!-- Кнопка закрытия, используемая для возврата -->
+        <!-- Контейнер с двумя колонками, содержащими изображение и текст -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Левая колонка с изображением продукта -->
+                    <img src="img/glass_paints.jpg" alt="" class="container__description-box_img" style="width: 100%;">
+                </div>
+                <div class="col-md-6">
+                    <!-- Правая колонка с текстовой информацией о продукте -->
+                    <div class="box-text">
+                        <div class="box-text-container">
+                            <h2>Витражи</h2> <!-- Заголовок продукта -->
+                            <p class="price">Цена: 100 р.</p> <!-- Цена продукта -->
+                            <p class="box_text__container_description">
+                                Экологичные безопасные компоненты.<br>
+                                Различные варианты исполнения<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Скрипт для кнопки закрытия, перенаправляющей на коллекцию -->
+    <script>
+        document.getElementById("close-button").addEventListener("click", function () {
+            window.location.href = "collection.html";
+        });</script>
+    <!-- Подключение JavaScript для функционала Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Основные метаданные и стили -->
+    <meta charset="UTF-8"> <!-- Установка кодировки символов -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Масштабирование страницы для мобильных устройств -->
+    <!-- Подключение CSS файлов -->
+    <link rel="stylesheet" href="style.css"> <!-- Локальный файл стиля -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> <!-- Bootstrap для сетки и стилизации -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Иконки FontAwesome -->
+
+    <title>Интернет-магазин поделок</title> <!-- Название страницы -->
+</head>
+<body>
+    <!-- Секция описания товара -->
+    <section class="container__description">
+        <a href="collection.html" class="privacy-back">&larr;Вернуться назад</a> <!-- Ссылка для возврата к общей странице коллекции -->
+        <div id="close-button">&times;</div> <!-- Иконка закрытия, которая действует как кнопка для переключения на другую страницу -->
+        <!-- Контейнер с двумя колонками, используя Bootstrap для организации -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Левая колонка содержит изображение -->
+                    <img src="img/Raiden.jpg" alt="" class="container__description-box_img" style="width: 100%;"> <!-- Изображение продукта с растяжкой на всю ширину колонки -->
+                </div>
+                <div class="col-md-6">
+                    <!-- Правая колонка с текстовым описанием продукта -->
+                    <div class="box-text">
+                        <div class="box-text-container">
+                            <h2>Райдэн</h2> <!-- Название продукта -->
+                            <p class="price">Цена: 3650 р.</p> <!-- Цена продукта -->
+                            <p class="box_text__container_description">
+                                Алмазная мозаика "Райдэн"<br> <!-- Подробности о продукте -->
+                                На подрамнике Геншин импакт 30х30<br>
+                                Стразы<br>
+                                Лоток для страз<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Скрипт для функциональности кнопки закрытия ---->
+    <script>
+        document.getElementById("close-button").addEventListener("click", function () {
+            // Клик по кнопке закрытия ведет на страницу коллекции
+            window.location.href = "collection.html";
+        });
+    </script>
+
+    <!-- Подключение JavaScript файла для Bootstrap, обеспечивающее работу динамических компонентов -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

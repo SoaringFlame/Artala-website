@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Установка кодировки и адаптивности страницы -->
+    <meta charset="UTF-8"> <!-- Кодировка для поддержки различных текста -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Масштабирование страницы для удобства просмотра на мобильных устройствах -->
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="style.css"> <!-- Локальный файл CSS для стилизации страницы -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> <!-- Bootstrap для сетки и адаптивного дизайна -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Подключение иконок FontAwesome -->
+    <title>Интернет-магазин поделок</title> <!-- Название страницы, отображаемое в браузере -->
+</head>
+<body>
+    <!-- Секция описания продукта -->
+    <section class="container__description">
+        <a href="collection.html" class="privacy-back">&larr;Вернуться назад</a> <!-- Ссылка для возвращения к коллекции -->
+        <div id="close-button">&times;</div> <!-- Кнопка закрытия, представляющая собой элемент '&times;' -->
+        <!-- Контейнер с двумя колонками -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Видеоплеер для показа интерьера -->
+                    <div id="video-container">
+                        <video width="100%" controls autoplay muted id="video">
+                            <source src="home.mp4" type="video/mp4"> <!-- Видео файл в формате mp4 -->
+                            Ваш браузер не поддерживает видео. <!-- Сообщение, если видео не поддерживается -->
+                        </video>
+                        <div id="loading" style="display: block;">Загрузка видео...</div> <!-- Загрузка видео -->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Описание продукта -->
+                    <div class="box-text">
+                        <div class="box-text-container">
+                            <h2>Румбокс/Интерьерный конструктор</h2> <!-- Название продукта -->
+                            <p class="price">Цена: 2990 р.</p> <!-- Цена продукта -->
+                            <p class="box_text__container_description">
+                                Куколный интерьер в миниатюре<br>
+                                Придают особую атмосферу волшебства<br>
+                            </p> <!-- Описание продукта -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Скрипт для функциональности кнопки закрытия -->
+    <script>
+        document.getElementById("close-button").addEventListener("click", function () {
+            window.location.href = "collection.html"; // Перенаправление на страницу коллекции
+        });
+    </script>
+
+    <!-- Подключение скрипта Bootstrap для дополнительного функционала -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

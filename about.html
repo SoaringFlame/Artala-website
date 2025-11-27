@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Установка кодировки и масштабирования страницы -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Подключение внешних стилей -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Интернет-магазин поделок</title> <!-- Название страницы -->
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <nav class="navbar" id="main">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="navbar__container">
+            <a href="index.html"><img class="logo" src="logo/logotransparent.png" alt="логотип"></a>
+            <h1 class="title-first">
+                <span class="title-first__main">Artala</span>
+            </h1>
+            <div class="navbar-container">
+                <ul class="navbar__menu-items">
+                    <li class="navbar__menu-items_item"><a href="index.html">Главная</a></li>
+                    <li class="navbar__menu-items_item"><a href="contact.html">Контакты</a></li>
+                    <li class="navbar__menu-items_item">
+                        <a href="collection.html">Коллекция</a>
+                        <div class="dropdown">
+                            <a href="vangog.html">Звездная ночь</a>
+                            <a href="home.html">Румбокс</a>
+                            <a href="rik_and_morty.html">Рик и Морти</a>
+                            <a href="Raiden.html">Райдэн</a>
+                            <a href="glass_paints.html">Витражи</a>
+                            <a href="lilac_bush.html">Вышивка крестиком</a>
+                        </div>
+                    </li>
+                    <li class="navbar__menu-items_item"><a href="about.html">О нас</a></li>
+                    <div class="user-status" id="user-status">
+                        <a href="authorization.html" class="user-avatar-link">
+                            <img src="img/profile.png" alt="аватарка пользователя" class="profile-logo">
+                        </a>
+                    </div>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Секция "О компании" -->
+    <section class="about" id="about">
+        <div class="about__container" style="padding-top: 2rem;">
+            <div class="about__backgraund"></div>
+            <h2 class="title-two">Творчество - это способность замечать красоту в обычном и получать от этого удовольствие</h2>
+            <div class="about__text">
+                Добро пожаловать в наш интернет-магазин уникальных поделок ручной работы! У нас вы найдете эксклюзивные, стильные и тщательно изготовленные изделия, созданные с любовью и вниманием к деталям. Используя только проверенные и качественные материалы, наши мастера создают произведения, которые добавят уют и индивидуальность вашему дому. Пробудите в себе креативное начало и сделайте особенными ваши моменты с нашими поделками ручной работы. Погрузитесь в мир вдохновения и уникальных решений для вашего интерьера. Покупайте поделки ручной работы у нас и становитесь частью нашей неповторимой коллекции.
+            </div>
+            <a href="collection.html"><button class="btn-about">Каталог</button></a>
+        </div>
+    </section>
+
+
+    <!-- Футер страницы -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="box-icon">
+                <!-- Иконки социальных сетей и контактов -->
+                <div class="icons-item">
+                    <a href="https://api.whatsapp.com/send/?phone=79999999999">
+                        <div class="circle">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="icons-item">
+                    <a href="tel:+79999999999">
+                        <div class="circle">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="icons-item">
+                    <a href="https://vk.com/soaringflame">
+                        <div class="circle">
+                            <i class="fab fa-vk"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <p class="developer">
+                <!-- Информация об авторе или разработчике -->
+                © 2024 Artala. Сайт разработан Юрочкиной Станиславой Владиславовной для учебных целей.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Подключение скриптов -->
+    <script src="js/active.js"></script>
+    <script src="js/number.js"></script>
+    <script src="js/basket.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

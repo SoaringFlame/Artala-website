@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Начальная страница</title>
+</head>
+<body>
+    <nav class="navbar" id="main">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="navbar__container">
+            <a href="index.html"><img class="logo" src="logo/logotransparent.png" alt="logo"></a>
+            <h1 class="title-first">
+                <span class="title-first__main">Artala</span>
+            </h1>
+            <div class="navbar-container">
+                <ul class="navbar__menu-items">
+                    <!-- Добавьте ссылки на страницы авторизации и регистрации -->
+                    <li class="navbar__menu-items_item"><a href="authorization.html?form=login">Авторизация</a></li>
+                    <li class="navbar__menu-items_item"><a href="authorization.html?form=register">Регистрация</a></li>
+                    <div class="user-status" id="user-status">
+                        <a href="authorization.html?form=login" class="user-avatar-link">
+                            <img src="img/profile.png" alt="аватарка пользователя" class="profile-logo">
+                        </a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="first-section" id="main-1">
+        <div class="header__box">
+            <img class="log1" src="logo/logotransparent.png" alt="логотип">
+            <h1 class="title-first">
+                <span class="title-love">СДЕЛАНО С ЛЮБОВЬЮ</span>
+                <span class="title-first__secondary">поделки ручной работы</span>
+            </h1>
+            <button class="btn margin" onclick="redirectToMainPage()">Заказать</button>
+        </div>
+    </section>
+
+    <script>
+        function redirectToMainPage() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

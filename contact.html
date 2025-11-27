@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Основные метаданные и подключение стилей -->
+    <meta charset="UTF-8"> <!-- Установка кодировки для корректного отображения текста -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Адаптивный дизайн для мобильных -->
+    <title>Контакт</title> <!-- Заголовок страницы, отображаемый в браузере -->
+    <link rel="stylesheet" href="style.css"> <!-- Подключение основного файла стилей -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Подключение иконок FontAwesome -->
+</head>
+
+<body>
+    <!-- Шапка -->
+    <!-- Навигационная панель -->
+    <!-- Навигационная панель -->
+    <!-- Навигационная панель -->
+    <nav class="navbar" id="main">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="navbar__container">
+            <a href="index.html"><img class="logo" src="logo/logotransparent.png" alt="логотип"></a>
+            <h1 class="title-first">
+                <span class="title-first__main">Artala</span>
+            </h1>
+            <div class="navbar-container">
+                <ul class="navbar__menu-items">
+                    <li class="navbar__menu-items_item"><a href="index.html">Главная</a></li>
+                    <li class="navbar__menu-items_item"><a href="contact.html">Контакты</a></li>
+                    <li class="navbar__menu-items_item">
+                        <a href="collection.html">Коллекция</a>
+                        <div class="dropdown">
+                            <a href="vangog.html">Звездная ночь</a>
+                            <a href="home.html">Румбокс</a>
+                            <a href="rik_and_morty.html">Рик и Морти</a>
+                            <a href="Raiden.html">Райдэн</a>
+                            <a href="glass_paints.html">Витражи</a>
+                            <a href="lilac_bush.html">Вышивка крестиком</a>
+                        </div>
+                    </li>
+                    <li class="navbar__menu-items_item"><a href="about.html">О нас</a></li>
+                    <div class="user-status" id="user-status">
+                        <a href="authorization.html" class="user-avatar-link">
+                            <img src="img/profile.png" alt="аватарка пользователя" class="profile-logo">
+                        </a>
+                    </div>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Контактная форма -->
+    <!-- Контент страницы -->
+    <section class="section-book" id="contact">
+        <div class="book__form">
+            <form action="sendmail.php" method="POST" class="form">
+                <div class="text-align-center">
+                    <h4 class="title-secondary">
+                        Для заказа товара свяжитесь с нами заполнив форму
+                    </h4><!-- Инструкции по контакту -->
+                </div>
+
+                <!-- Поля для ввода данных пользователя -->
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="Имя Фамилия *" id="name" maxlength="20" name="name" required>
+                </div>
+                <div class="form__group">
+                    <input type="email" class="form__input" placeholder="Ваш email *" id="email" maxlength="20" name="email" required>
+                </div>
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="Номер телефона *" id="phone" maxlength="19" name="phone" required>
+                </div>
+                <div class="form__group">
+                    <textarea class="form__input_text" placeholder="Текст" id="text" name="text" required></textarea>
+                </div>
+                <!-- Согласие на обработку данных -->
+                <div class="form__group">
+                    <input type="checkbox" class="form__check" id="privacy-check" required>
+                    <label for="privacy-check" class="form__label">Я соглашаюсь с <a href="privacy.html" target="_blank">политикой в отношении персональных данных</a></label>
+                </div>
+                <!-- Кнопка для отправки формы -->
+                <div class="form__group">
+                    <button class="btn-form btn-cards_green" type="submit">Отправить</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+    <!-- Футер сайта -->
+    <footer class="footer">
+        <div class="footer__container">
+            <!-- Иконки контактов и соцсетей -->
+            <div class="box-icon">
+                <div class="icons-item">
+                    <a href="https://api.whatsapp.com/send/?phone=79999999999">
+                        <div class="circle">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="icons-item">
+                    <a href="tel:+79999999999">
+                        <div class="circle">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="icons-item">
+                    <a href="https://vk.com/soaringflame">
+                        <div class="circle">
+                            <i class="fab fa-vk"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <p class="developer">© 2024 Artala. Сайт разработан Юрочкиной Станиславой Владиславовной для учебных целей.</p>
+        </div>
+    </footer>
+
+    <!-- Подключение JavaScript файла -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Установка основных метаданных и стилей -->
+    <meta charset="UTF-8"> <!-- Кодировка для поддержки различных языков -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Адаптация страницы под разные устройства -->
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="style.css"> <!-- Локальный CSS файл для специфической стилизации страницы -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> <!-- Bootstrap для сетки и адаптивного дизайна -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Подключение иконок FontAwesome -->
+
+    <title>Интернет-магазин поделок</title> <!-- Заголовок страницы, отображаемый в браузере -->
+</head>
+<body>
+    <!-- Секция описания продукта -->
+    <section class="container__description">
+        <a href="collection.html" class="privacy-back">&larr;Вернуться назад</a> <!-- Ссылка для возврата в коллекцию -->
+        <div id="close-button">&times;</div> <!-- Иконка для закрытия, действующая как клик для возврата -->
+        <!-- Контейнер с двумя колонками, с использованием сетки Bootstrap -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Левая колонка с изображением продукта -->
+                    <img src="img/lilac bush.jpg" alt="" class="container__description-box_img" style="width: 100%;"> <!-- Изображение с классами для стилизации -->
+                </div>
+                <div class="col-md-6">
+                    <!-- Правая колонка с текстовой информацией -->
+                    <div class="box-text">
+                        <div class="box-text-container">
+                            <h2>Вышивка крестиком</h2> <!-- Заголовок описания продукта -->
+                            <p class="price">Цена: 1400 р.</p> <!-- Цена продукта -->
+                            <p class="box_text__container_description">
+                                Вышивка крестиком "букет сирени"<br>
+                                Ткань блочного переплетения<br>
+                            </p> <!-- Описание продукта с характеристиками -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript для функциональности кнопки закрытия -->
+    <script>
+        document.getElementById("close-button").addEventListener("click", function () {
+            // Перенаправление на страницу коллекции при клике
+            window.location.href = "collection.html";
+        });
+    </script>
+
+    <!-- Подключение JavaScript для Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

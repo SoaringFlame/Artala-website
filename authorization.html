@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="windows-1251">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Авторизация и Регистрация</title>
+</head>
+<body class="main-background">
+    <div class="auth-container">
+        <h1 id="auth-heading">Авторизация</h1>
+        <form id="loginForm">
+            <label for="loginEmail" class="auth-label">Электронная почта</label>
+            <input type="email" id="loginEmail" class="auth-input" placeholder="example@art.com" required>
+            <span class="error-message" id="emailError" style="color: red; display: none;">
+                Некорректный email. Пожалуйста, проверьте формат.
+            </span>
+            <label for="loginPassword" class="auth-label">Пароль</label>
+            <input type="password" id="loginPassword" class="auth-input" placeholder="Введите пароль" required>
+            <button type="submit" class="auth-button">Войти</button>
+            <p class="auth-paragraph">Нет аккаунта? <a href="#" id="showRegister">Зарегистрируйтесь</a></p>
+        </form>
+
+        <h1 style="display: none;" id="register-heading">Регистрация</h1>
+        <form id="registerForm" style="display: none;">
+            <label for="registerName" class="auth-label">Имя</label>
+            <input type="text" id="registerName" class="auth-input" placeholder="Ваше имя" required>
+            <label for="registerEmail" class="auth-label">Электронная почта</label>
+            <input type="email" id="registerEmail" class="auth-input" placeholder="example@art.com" required>
+            <span class="error-message" id="registerEmailError" style="color: red; display: none;">
+                Некорректный email. Пожалуйста, проверьте формат.
+            </span>
+            <label for="registerPassword" class="auth-label">Пароль</label>
+            <input type="password" id="registerPassword" class="auth-input" placeholder="Введите пароль" required>
+            <button type="submit" class="auth-button">Зарегистрироваться</button>
+            <p class="auth-paragraph">Уже есть аккаунт? <a href="#" id="showLogin">Войти</a></p>
+        </form>
+    </div>
+
+    <!-- Подключение внешнего JavaScript файла -->
+    <script src="js/auth.js"></script>
+</body>
+</html>

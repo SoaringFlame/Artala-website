@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Основные метатеги и подключение стилей -->
+    <meta charset="UTF-8"> <!-- Кодировка страницы, обеспечивающая корректное отображение символов -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Для адаптивного дизайна страницы на мобильных устройствах -->
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="style.css"> <!-- Локальный CSS файл для пользовательских стилей -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> <!-- Bootstrap CSS для сетки и базовых стилей -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- FontAwesome для иконок -->
+
+    <title>Интернет-магазин поделок</title> <!-- Название страницы, отображаемое в заголовке вкладки браузера -->
+</head>
+<body>
+    <!-- Секция описания продукта -->
+    <section class="container__description">
+        <a href="collection.html" class="privacy-back">&larr;Вернуться назад</a> <!-- Ссылка для возвращения к странице коллекции -->
+        <div id="close-button">&times;</div> <!-- Элемент, выступающий в роли кнопки закрытия, перенаправляющий пользователя обратно -->
+        <!-- Контейнер с использованием Bootstrap классов для организации контента в сетку -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Левая колонка содержит изображение продукта -->
+                    <img src="img/rik_and_morty.jpg" alt="" class="container__description-box_img" style="width: 100%;"> <!-- Изображение отображается на всю ширину колонки -->
+                </div>
+                <div class="col-md-6">
+                    <!-- Правая колонка с текстовым содержимым -->
+                    <div class="box-text">
+                        <div class="box-text-container">
+                            <h2>Рик и Морти</h2> <!-- Название продукта -->
+                            <p class="price">Цена: 3990 р.</p> <!-- Цена продукта -->
+                            <p class="box_text__container_description">
+                                Алмазная мозаика "Рик и Морти"<br> <!-- Описание продукта, включающее его особенности -->
+                                На подрамнике 40х50<br>
+                                Стразы<br>
+                                Лоток для страз<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Скрипт для функциональности элемента закрытия -->
+    <script>
+        document.getElementById("close-button").addEventListener("click", function () {
+            // При клике на элемент закрытия пользователя перенаправляют на страницу "collection.html"
+            window.location.href = "collection.html";
+        });
+    </script>
+
+    <!-- Подключение JavaScript Bootstrap для поддержки интерактивных элементов -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
